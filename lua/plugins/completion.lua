@@ -81,21 +81,4 @@ return {
 			},
 		},
 	},
-	{
-		"stevearc/conform.nvim",
-		opts = {},
-		config = function()
-			local conform = require("conform")
-			conform.setup({
-				formatters_by_ft = {
-					lua = { "stylua" },
-					python = { "isort", "black" },
-				},
-				format_on_save = {
-					lsp_format = "fallback",
-				},
-			})
-			vim.keymap.set("n", "<leader>fa", conform.format, {})
-		end,
-	},
 }
