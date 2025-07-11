@@ -143,6 +143,7 @@ local mason_lspconfig = require 'mason-lspconfig'
 
 mason_lspconfig.setup {
   ensure_installed = vim.tbl_keys(servers),
+  auto_install = false,
 }
 
 mason_lspconfig.setup_handlers {
