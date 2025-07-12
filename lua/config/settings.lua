@@ -8,7 +8,7 @@ vim.wo.cursorline = true
 vim.wo.so = 15
 vim.wo.number = true
 vim.wo.relativenumber = true
-vim.o.scrolloff = 99
+vim.opt.scrolloff = 99
 
 vim.o.hlsearch = false
 vim.o.mouse = "a"
