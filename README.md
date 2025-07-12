@@ -1,5 +1,8 @@
 # Nvim config
 
+-- > [!NOTE]
+> Neovim v0.11+ 
+
 Modificações para adequar as configurações baseadas no kickstart de acordo com preferências pessoais
 
 > **Important**
