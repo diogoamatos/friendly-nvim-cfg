@@ -18,7 +18,7 @@ return {
 		require("neo-tree").setup({
 			window = {
 				mappings = {
-					["<space>"] = {""},
+					["<space>"] = {},
 				}
 			},
 			filesystem = {
