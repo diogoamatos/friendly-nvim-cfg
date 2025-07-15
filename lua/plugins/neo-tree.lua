@@ -12,7 +12,6 @@ return {
 	opts = {
 	},
 	config = function ()
-		vim.keymap.set("n", "<leader>e", "<cmd>Neotree reveal<cr>", { desc = "n[E]otree Reveal"})
 		vim.keymap.set("n", "<leader>n", "<cmd>Neotree toggle<cr>", { desc = "Toggle Neotree"})
 
 		require("neo-tree").setup({
