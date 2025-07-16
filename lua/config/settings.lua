@@ -1,14 +1,20 @@
 -- [[ Setting options ]]
 -- See `:help vim.o`
--- NOTE: You can change these options as you wish!
 
+-- disable netrw 
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+-- Enable 24-bit colour
+vim.opt.termguicolors = true
+
+-- Set the line number and make it relative
 vim.wo.cursorcolumn = true
 vim.wo.cursorline = true
--- Set the line number above and below the cursor
 vim.wo.so = 15
 vim.wo.number = true
 vim.wo.relativenumber = true
-vim.opt.scrolloff = 99
+vim.opt.scrolloff = 999
 
 vim.o.hlsearch = false
 vim.o.mouse = "a"
@@ -36,9 +42,6 @@ vim.wo.signcolumn = "yes"
 vim.o.updatetime = 250
 vim.o.timeoutlen = 300
 vim.o.completeopt = "menuone,noselect"
-
--- NOTE: You should make sure your terminal supports this
-vim.o.termguicolors = true
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
