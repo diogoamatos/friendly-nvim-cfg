@@ -10,3 +10,6 @@ vim.keymap.set("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = tr
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.keymap.set("n", "J", "mzJ`z")
+
+vim.keymap.set("n", "<bs>", ":b#<CR>", { desc = "switch to last buffer" })
+vim.keymap.set("n", "<C-s>", ":w<cr>", { desc = "Save file" })
