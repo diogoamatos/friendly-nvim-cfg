@@ -167,6 +167,7 @@ return {
       'stylua',
       'isort',
       'black',
+      'django-template-lsp',
     })
     require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
