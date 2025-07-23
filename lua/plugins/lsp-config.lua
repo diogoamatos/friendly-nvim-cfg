@@ -168,8 +168,8 @@ return {
           },
         },
       },
-      ts_ls = {},
       pylsp = {},
+      ts_ls = {},
     }
 
     local ensure_installed = vim.tbl_keys(servers or {})
@@ -179,6 +179,7 @@ return {
       'black',
       'prettier',
       'django-template-lsp',
+      'djlint',
     })
     require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
