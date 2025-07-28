@@ -168,6 +168,7 @@ return {
           },
         },
       },
+      ts_ls = {},
       pylsp = {},
     }
 
@@ -176,7 +177,8 @@ return {
       'stylua',
       'isort',
       'black',
-      'django-template-lsp',
+      -- 'django-template-lsp',
+      'prettier',
     })
     require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
