@@ -18,7 +18,7 @@ return {
   config = function()
     local file_ignore_patters = {
       "venv", "__pycache__", "%.xlsx", "%.jpg", "%.png", "%.webp",
-      "%.pdf", "%.odt", "%.ico",
+      "%.pdf", "%.odt", "%.ico", "node_modules",
     }
 
     require('telescope').setup({
